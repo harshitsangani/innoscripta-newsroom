@@ -19,6 +19,9 @@ const articlesSlice = createSlice({
     addArticle(state, action: PayloadAction<Article>) {
       state.push(action.payload);
     },
+    addArticles(state, action: PayloadAction<Article[]>) {
+      state.push(...action.payload);
+    },
     removeArticle(state, action: PayloadAction<Article>) {
       return state.filter((article) => article.url !== action.payload.url);
     },
