@@ -6,7 +6,9 @@ const baseUrl: string = "https://newsapi.org/v2";
 
 class NetworkService {
   private getHeaders(): Record<string, string> {
-    const token = import.meta.env.VITE_NEWS_API_API_KEY;
+    const token =
+      import.meta.env.VITE_NEWS_API_API_KEY ||
+      "7a986e0e8d364469a98e6fbc766db06b";
     return {
       "Content-Type": "application/json",
       Authorization: token,
