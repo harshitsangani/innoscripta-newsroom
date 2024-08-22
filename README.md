@@ -89,7 +89,7 @@ docker run -p 3000:3000 -ti innoscripta-newsroom
 1. run the app
 
 ```
-docker run -ti harshitsangani/innoscripta-newsroom
+docker run -p 3000:3000 -ti harshitsangani/innoscripta-newsroom
 ```
 
 <br />
